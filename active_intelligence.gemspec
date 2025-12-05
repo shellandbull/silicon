@@ -5,12 +5,12 @@ require_relative "lib/active_intelligence/version"
 Gem::Specification.new do |spec|
   spec.name = "active_intelligence"
   spec.version = ActiveIntelligence::VERSION
-  spec.authors = ["Mario Gintili"]
-  spec.email = ["mariojgintili@gmail.com"]
+  spec.authors = ["Mario Gintili - @shellandbull on Github"]
+  spec.email = ["code.mario.gintili@gmail.com"]
 
-  spec.summary = "TODO: Write a short summary, because RubyGems requires one."
-  spec.description = "TODO: Write a longer description or delete this line."
-  spec.homepage = "TODO: Put your gem's website or public repo URL here."
+  spec.summary = "AI tools for Ruby on Rails applications"
+  spec.description = "TODO"
+  spec.homepage = "TODO"
   spec.license = "MIT"
   spec.required_ruby_version = ">= 3.2.0"
 

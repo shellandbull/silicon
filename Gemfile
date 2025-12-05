@@ -7,5 +7,12 @@ gemspec
 
 gem "irb"
 gem "rake", "~> 13.0"
-
+gem "activesupport"
+gem "faraday"
 gem "rspec", "~> 3.0"
+gem "activemodel"
+
+group :test do
+  gem "webmock"
+  gem "vcr"
+end

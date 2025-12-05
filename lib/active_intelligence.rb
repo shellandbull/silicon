@@ -1,8 +1,13 @@
 # frozen_string_literal: true
-
-require_relative "active_intelligence/version"
+require "active_support"
+require "active_model"
 
 module ActiveIntelligence
+  include ActiveSupport::Configurable
+
   class Error < StandardError; end
-  # Your code goes here...
+end
+
+Dir[File.join(File.dirname(__FILE__), '**', '*.rb')].each do |file|
+  require file
 end
