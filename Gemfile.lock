@@ -1,7 +1,7 @@
 PATH
   remote: .
   specs:
-    active_intelligence (0.1.0)
+    silicon (0.1.0)
 
 GEM
   remote: https://rubygems.org/
@@ -41,7 +41,6 @@ GEM
       logger
     faraday-net_http (3.4.2)
       net-http (~> 0.5)
-    ffi (1.17.2)
     ffi (1.17.2-arm64-darwin)
     formatador (1.2.3)
       reline
@@ -135,10 +134,8 @@ GEM
 
 PLATFORMS
   arm64-darwin-24
-  ruby
 
 DEPENDENCIES
-  active_intelligence!
   activemodel
   activesupport
   faraday
@@ -146,6 +143,7 @@ DEPENDENCIES
   irb
   rake (~> 13.0)
   rspec (~> 3.0)
+  silicon!
   vcr
   webmock
 

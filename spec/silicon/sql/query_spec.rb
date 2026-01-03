@@ -1,6 +1,20 @@
 require "spec_helper"
 
-RSpec.describe ActiveIntelligence::Sql::Query, type: :sql do
+RSpec.describe Silicon::Sql::Query, type: :sql do
+  let(:schema) { File.read("./spec/support/schema.rb") }
+
+  before do
+    Silicon.config do |config|
+      config.schema = schema
+    end
+  end
+
+  after do
+    Silicon.config do |config|
+      config.schema = nil
+    end
+  end
+
   describe "#initialize" do
     let(:prompt) { "Give me all the users with ID 1" }
     subject do
@@ -12,8 +26,9 @@ RSpec.describe ActiveIntelligence::Sql::Query, type: :sql do
     end
   end
 
-  describe "call" do
+  describe "t" do
     it "returns an active record lazily evaluated query" do
+
     end
 
     it "does not execute twice" do

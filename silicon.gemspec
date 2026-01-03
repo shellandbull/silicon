@@ -1,10 +1,10 @@
 # frozen_string_literal: true
 
-require_relative "lib/active_intelligence/version"
+require_relative "lib/silicon/version"
 
 Gem::Specification.new do |spec|
-  spec.name = "active_intelligence"
-  spec.version = ActiveIntelligence::VERSION
+  spec.name = "silicon"
+  spec.version = Silicon::VERSION
   spec.authors = ["Mario Gintili - @shellandbull on Github"]
   spec.email = ["code.mario.gintili@gmail.com"]
 
